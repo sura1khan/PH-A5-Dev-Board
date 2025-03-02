@@ -22,7 +22,7 @@
     <div class="flex space-x-5">
     <div class="flex gap-2 rounded-full p-1 bg-[#F4F7FF]">
      <img class=" w-6 h-6" src="image/checkbox.png" alt="tickmark">
-    <h1 id="check"><b>0</b></h1>
+    <h1 id="check" class="font-bold"><b>0</b></h1>
     </div>
     <!-- -------theme btn------  -->
     <button>
@@ -45,7 +45,7 @@
                 </div>
                 <div>
                     <p>Task Assigned</p>
-                    <h1 id="count"><b>06</b></h1>
+                    <h1 id="count" class="font-bold"><b>06</b></h1>
                 </div>
              </div>
              <div class="bg-gradient-to-r from-blue-600
@@ -60,12 +60,13 @@
              flex gap-3 items-center text-sm"><!--calender-->
                 <div><img  src="image/calender.png" alt=""></div>
                 <div>
-                    <p id="Date" class="font-bold"></p>
+                    <p class="Date font-bold"></p>
                 </div>
              </div>
            </div> <!-- ---------banneTitleEnd--------------- -->
            <!-- ----------------leftDiv-------------- -->
            <div class="grid grid-cols-3 grid-rows-3 gap-4"><!--carts-->
+            
             <div class="bg-[#F4F7FF] px-4 rounded-lg w-10\12 m-auto
             gap-3 items-center text-sm  p-5 space-y-2" > <!--cart 1-->
                <h6 class="bg-white rounded-lg p-2">
@@ -75,91 +76,110 @@
                 Debug using Chorom DevTools, check for overlapping..</p>    
                <div class="flex items-center gap-1 justify-between">
                    <div><h6 class="font-normal">Deadline</h6>
-                   <h1 class="font-semibold">21 March 2025</h1>
+                    <p class="Date font-normal"></p>
                </div>
-                   <div><button onclick="completeTask(this)" class="btn btn-dash
+                   <div>
+                    <button id="showMessageBtn1" data-message-id="message"
+                    data-task-name="Fix Mobile Button Issue" onclick="completeTask(this)" class="btn btn-dash
                      btn-primary bg-blue-700
-                      text-white text-bold h-8 hover:bg-blue-500">Discover</button></div>
+                      text-white text-bold h-8 hover:bg-blue-500">
+                      Completed</button></div>
                </div>
             </div>
             <div class="bg-[#F4F7FF] px-4 rounded-lg 
             gap-3 items-center text-sm p-5 space-y-2" > <!--cart 2-->
                <h6 class="bg-white rounded-lg p-2">
-                ShopEase</h6>
-               <h1 class="font-semibold text-lg">Fix Mobile Button Issue</h1>
+                CloudSync</h6>
+               <h1 class="font-semibold text-lg"></h1>
                <p class="bg-white font-light rounded-lg">
-                Debug using Chorom DevTools, check for overlapping..</p>    
+                Store the user's preference in localStorage, update CSS variables dynamically.</p>    
                <div class="flex items-center gap-1 justify-between">
                    <div><h6 class="font-normal">Deadline</h6>
-                   <h1 class="font-semibold">21 March 2025</h1>
+                    <p class="Date font-normal"></p>
                </div>
-                   <div><button onclick="completeTask(this)" class="btn btn-dash
+                   <div><button id="showMessageBtn2" data-message-id="messag"
+                    data-task-name="Add Dark Mode" onclick="completeTask(this)" class="btn btn-dash
                      btn-primary bg-blue-700 h-8
-                      text-white text-bold hover:bg-blue-500">Discover</button></div>
+                      text-white text-bold hover:bg-blue-500">
+                      Completed</button></div>
                </div>
             </div>
             <div class="bg-[#F4F7FF] px-4 rounded-lg 
             gap-3 items-center text-sm p-5 space-y-2" > <!--cart 3-->
                <h6 class="bg-white rounded-lg p-2">
-                ShopEase</h6>
-               <h1 class="font-semibold text-lg">Fix Mobile Button Issue</h1>
+                SwiftPay</h6>
+               <h1 class="font-semibold text-lg">
+                </h1>
                <p class="bg-white font-light rounded-lg">
                 Debug using Chorom DevTools, check for overlapping..</p>    
                <div class="flex items-center gap-1 justify-between">
                    <div><h6 class="font-normal">Deadline</h6>
-                   <h1 class="font-semibold">21 March 2025</h1>
+                    <p class="Date font-normal"></p>
                </div>
-                   <div><button onclick="completeTask(this)" class="btn btn-dash
+                   <div><button  id="showMessageBtn3" data-message-id="messg"
+                    data-task-name="Optimize  Home page" onclick="completeTask(this)" class="btn btn-dash
                      btn-primary bg-blue-700 h-8
-                      text-white text-bold hover:bg-blue-500">Discover</button></div>
+                      text-white text-bold hover:bg-blue-500">
+                      Completed</button></div>
                </div>
             </div>
             <div class="bg-[#F4F7FF] px-4 rounded-lg 
             gap-3 items-center text-sm p-5 space-y-2" > <!--cart 4-->
                <h6 class="bg-white rounded-lg p-2">
-                ShopEase</h6>
-               <h1 class="font-semibold text-lg">Fix Mobile Button Issue</h1>
+                Meta</h6>
+               <h1 class="font-semibold text-lg">
+                🤲
+            </h1>
                <p class="bg-white font-light rounded-lg">
                 Debug using Chorom DevTools, check for overlapping..</p>    
                <div class="flex items-center gap-1 justify-between">
                    <div><h6 class="font-normal">Deadline</h6>
-                   <h1 class="font-semibold">21 March 2025</h1>
+                    <p class="Date font-normal"></p>
                </div>
-                   <div><button onclick="completeTask(this)" class="btn btn-dash
+                   <div><button id="showMessageBtn4" data-message-id="mesg"
+                    data-task-name=" Add new emoji" onclick="completeTask(this)" class="btn btn-dash
                      btn-primary bg-blue-700 h-8
-                      text-white text-bold hover:bg-blue-500">Discover</button></div>
+                      text-white text-bold hover:bg-blue-500">
+                      Completed</button></div>
                </div>
             </div>
             <div class="bg-[#F4F7FF] px-4 rounded-lg 
             gap-3 items-center text-sm p-5 space-y-2" > <!--cart 5-->
                <h6 class="bg-white rounded-lg p-2">
-                ShopEase</h6>
-               <h1 class="font-semibold text-lg">Fix Mobile Button Issue</h1>
+                Google LLC</h6>
+               <h1 class="font-semibold text-lg"> </h1>
                <p class="bg-white font-light rounded-lg">
                 Debug using Chorom DevTools, check for overlapping..</p>    
                <div class="flex items-center gap-1 justify-between">
                    <div><h6 class="font-normal">Deadline</h6>
-                   <h1 class="font-semibold">21 March 2025</h1>
+                    <p class="Date font-normal"></p>
                </div>
-                   <div><button onclick="completeTask(this)" class="btn btn-dash
+                   <div><button  id="showMessageBtn5" data-message-id="msg"
+                    data-task-name="Integrate OpenAI API" onclick="completeTask(this)" class="btn btn-dash
                      btn-primary bg-blue-700 h-8
-                      text-white text-bold hover:bg-blue-500">Discover</button></div>
+                      text-white text-bold hover:bg-blue-500">
+                      Completed</button></div>
                </div>
             </div>
             <div class="bg-[#F4F7FF] px-4 rounded-lg 
             gap-3 items-center text-sm p-5 space-y-2" > <!--cart 6-->
                <h6 class="bg-white rounded-lg p-2">
-                ShopEase</h6>
-               <h1 class="font-semibold text-lg">Fix Mobile Button Issue</h1>
+                Glassdoar</h6>
+               <h1 class="font-semibold text-lg">
+                 
+               </h1>
                <p class="bg-white font-light rounded-lg">
                 Debug using Chorom DevTools, check for overlapping..</p>    
-               <div class="flex items-center gap-1 justify-between">
+               <div class="flex items-center justify-between">
                    <div><h6 class="font-normal">Deadline</h6>
-                   <h1 class="font-semibold">21 March 2025</h1>
+                    <p class="Date font-normal"></p>
                </div>
-                   <div><button onclick="completeTask(this)" class="btn btn-dash
+                   <div><button id="showMessageBtn6" data-message-id="mg"
+                    data-task-name="Improve Job searching" onclick="completeTask(this)" 
+                    class="btn btn-dash
                      btn-primary bg-blue-700 h-8
-                      text-white text-bold hover:bg-blue-500">Discover</button></div>
+                      text-white text-bold hover:bg-blue-500">
+                      Completed</button></div>
                </div>
             </div>
            </div>
@@ -167,18 +187,36 @@
    
     <!-- ------------leftDivEnd--------------- -->
     <!-- --------------rightDiv--------------- -->
-    <div class="w-3/12 bg-[#F4F7FF] space-y-3 h-auto
+    <div class=" w-3/12 bg-[#F4F7FF] space-y-3 h-auto
     text-center p-4 rounded-lg">
         <div class="flex justify-center gap-1 ">
             <img src="image/activity.png" alt="">
             <p>Activity Log</p>
          </div>
          <div>
-            <div><button class="btn btn-dash
+            <div><button  onclick="clearHistory()"  class="  btn btn-dash
                 btn-primary bg-blue-700
                  text-white text-bold hover:bg-blue-500">
                  Clear History</button></div>
          </div>
+         <div id="activity-log"  >
+         <!--cart 1-->
+         <p id="message" class="hidden ">You have completed the task: Fix Mobile Button Issue.</p>
+
+         <!--cart 2-->
+         <p id="messag" class="hidden">You have completed the task: Add Dark Mode.</p>
+            <!--cart 3-->
+            <p id="messg" class="hidden">You have completed the task: Optimize Home Page.</p>
+
+             <!--cart 4-->
+             <p id="mesg" class="hidden">You have completed the task: Add new emoji.</p>
+
+             <!--cart 5-->
+             <p id="msg" class="hidden">You have completed the task: Integrate OpenAI API.</p>
+             <!--cart 6-->
+             <p id="mg" class="hidden">You have completed the task: Improve Job Searching.</p>
+        
+        </div>
     </div>
     <!-- -----------rightDivEnd--------------- -->
 </section>
